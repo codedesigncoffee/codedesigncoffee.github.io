@@ -1,0 +1,50 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: $dark-footer-color;
+  color:#FFFFFF;
+  .content {
+    a { color:#FFFFFF; }
+    i {
+      font-family: $smallcaps-stack;
+      font-style: normal;
+    }
+    p {
+      @include text-narrows-on-mobile;
+      @include text-padding;
+    }
+    p:first-child {
+      margin-top:0;
+    }
+    .sosume {
+      @include text-narrows-on-mobile;
+      hr {
+        width:100px;
+        border: 0;
+        border-top: 1px #333 solid;
+        margin-left: 10px;
+        margin-top:90px;
+      }
+      p {
+        font-family: $sans-stack;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 0;
+        span { text-transform: lowercase; }
+      }
+    }
+  }
+  .sidebar {
+    @include text-centers-on-mobile;
+    @include breakpoint($narrow) { padding:0; }
+    background-color: #000;
+    img {
+      @include border-top-radius(55px);
+      @include border-right-radius(55px);
+      @include border-bottom-radius(55px);
+      @include border-left-radius(55px);
+      width:110px;
+      margin-bottom:40px;
+    }
+  }
+}

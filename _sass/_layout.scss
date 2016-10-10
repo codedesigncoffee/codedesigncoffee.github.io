@@ -1,0 +1,49 @@
+body {
+  border-top: 5px solid $primary-color;
+  margin: 0;
+
+  font-family: $font-stack;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: url(/assets/images/background-wallpaper-black.png);
+  background-size: 400px 100px;
+}
+
+.background {
+  background-color: #FFF;
+}
+
+.wrappper {
+  @include container;
+
+  .sidebar {
+    @include breakpoint($narrow) {
+      display: none;
+    }
+    @include breakpoint($wide) {
+      @include span(4 last);
+    }
+  }
+
+  .content {
+    @include breakpoint($narrow) {
+      .reserved {
+        height: auto;
+      }
+      .mobile {
+        display: block;
+      }
+    }
+    @include breakpoint($wide) {
+      @include span(8);
+      .reserved {
+        height:$wide-topper-height;
+      }
+      .mobile {
+        display: none;
+      }
+    }
+  }
+}

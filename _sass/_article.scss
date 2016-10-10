@@ -1,0 +1,299 @@
+@mixin text-padding() {
+  padding-left: 10px;
+  padding-right: 10px;
+  @include breakpoint($narrow) { }
+  @include breakpoint($wide) { }
+}
+
+@mixin text-centers-on-mobile() {
+  @include breakpoint($narrow) {
+    text-align: center;
+  }
+}
+
+@mixin text-narrows-on-mobile() {
+  @include breakpoint($narrow) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 460px;
+  }
+}
+
+
+.single { }
+
+article {
+  margin-bottom: 80px;
+  h1 {
+    @include text-padding;
+    @include text-centers-on-mobile;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 20px;
+    color: $link-color;
+    a {
+      color: $link-color;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h2, h3 {
+    @include text-padding;
+    @include text-centers-on-mobile;
+    font-family: $sans-stack;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top:30px;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+  &.linked {
+    h1 {
+      a {
+        font-weight: normal;
+        font-size: 16px;
+        color:$primary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .byline, .source {
+    @include text-padding;
+    @include text-narrows-on-mobile;
+    font-family: $sans-stack;
+    font-size: 14px;
+    color: $light-gray-color;
+    margin-top:-5px;
+    a { color: $light-gray-color; }
+    .linked-or-briefly { color:$primary-color; }
+    .tag a {
+      font-family: $smallcaps-stack;
+      text-transform: lowercase;
+    }
+  }
+
+  blockquote {
+    margin-left: 20px;
+    border-left: 1px solid $light-gray-color;
+    @include breakpoint($narrow) {
+      @include text-narrows-on-mobile;
+      max-width: 420px;
+    }
+    @include breakpoint($text-width) {
+      margin-left: 10px;
+    }
+  }
+
+  p {
+    @include text-padding;
+    @include text-narrows-on-mobile;
+    //@include hyphens(auto);
+    //text-align: justify;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+    margin-bottom: 10px;
+    i {
+      font-family: $smallcaps-stack;
+      font-style: normal;
+    }
+  }
+
+  ul {
+    @include breakpoint($narrow) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 460px;
+    }
+    padding-left:30px;
+    list-style-type: circle;
+    li {
+      font-size: 16px;
+      line-height: 24px;
+      color: $text-color;
+    }
+  }
+
+  a {
+    color: $link-color;
+  }
+
+  img {
+    width:100%;
+  }
+
+  hr {
+    @include text-narrows-on-mobile;
+    padding: 10px 10px 0 10px;
+    border: 0;
+    text-align: center;
+  }
+
+  hr:after {
+    content:"* * *";
+  }
+
+  abbr {
+    font-variant-numeric: lining-nums;
+    -moz-font-feature-settings: "lnum";
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+  }
+
+  code {
+    font-family: $code-stack;
+    font-size:14px;
+  }
+  pre {
+    @include text-padding;
+    @include text-narrows-on-mobile;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    code {
+      hyphens: none;
+      padding: 0;
+      font-size: 12px;
+      line-height: 15px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      color:#555;
+      max-width: 100%;
+    }
+  }
+}
+
+.image, .graph {
+  @include breakpoint($narrow) { }
+  @include breakpoint($wide) { }
+  margin: 0;
+  p {
+    @include text-narrows-on-mobile;
+    padding: 0 10px;
+    margin-top: 5px;
+    color:$dark-grey-color;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  img, canvas {
+    width:100%;
+  }
+  i {
+    font-family: $smallcaps-stack;
+    font-style: normal;
+  }
+}
+
+.graph {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+aside {
+  @include breakpoint($wide) {
+    margin-left: 20px;
+    float: right;
+    width: 300px;
+  }
+}
+
+
+.article-meta {
+  background-color: $light-background-color;
+  padding: 5px;
+  margin: 150px 0px 100px 0px;
+  p {
+    @include text-padding;
+    @include text-narrows-on-mobile;
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-grey-color;
+    a {
+      color: $dark-grey-color;
+    }
+  }
+}
+
+article {
+  table {
+    @include text-narrows-on-mobile;
+    border-collapse: collapse;
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:10px;
+    width: 100%;
+    font-family: $sans-stack;
+
+    td, th {
+      padding: 5px;
+      border: 1px solid #ccc;
+      text-align: left;
+      height: 30px;
+    }
+
+    thead {
+      font-size:12px;
+      text-transform: uppercase;
+    }
+
+    tbody {
+      tr:nth-child(odd) {
+        background: $light-background-color;
+      }
+    }
+  }
+}
+
+.no-border-table {
+  td, th {
+      border: 1px none white;
+    }
+}
+
+
+.strava-table {
+  img {
+    margin-top: 3px;
+    width:24px;
+  }
+  .icon {
+    text-align: center;
+  }
+  .tittle {
+    width:70%;
+    .time {
+      font-family: $smallcaps-stack;
+      text-transform: lowercase;
+      font-size: 14px;
+      color: $light-gray-color;
+      a {
+        color: $light-gray-color;
+        text-decoration: none;
+      }
+    }
+  }
+  td, th {
+    border: 1px none white;
+    border-bottom: 1px solid #ccc;
+  }
+  .distance {
+    text-align: right;
+    span {
+      font-family: $smallcaps-stack;
+      text-transform: lowercase;
+  }
+  }
+}
+
+.strava img {width:210px;}

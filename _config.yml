@@ -1,2 +1,10 @@
 name: Code, Design & Coffee
 markdown: kramdown
+
+permalink: /:year/:month/:title
+
+encoding: utf-8
+
+sass:
+    sass_dir: _sass
+    style: compressed

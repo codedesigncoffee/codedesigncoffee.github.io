@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hello@codedesigncoffee.net">email</a></li>
-	        		<li><a href="https://github.com/totocater">github.com/totocaster</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+  <html>
+    <head>
+      {% include meta.html %}
+    </head>
+    <body>
+  <div class="background">
+    <div class="wrappper">
+      <div class="sidebar">
+        {% include sidebar.html %}
+      </div>
+      <div class="content">
+        <nav class="mobile">
+          <a href="/">Home</a> &sdot; <a href="#mobile-menu">Scroll to Menu</a>
+        </nav>
+        {{ content }}
+        <div class="mobile mobile-menu" id="mobile-menu">
+          {% include menu.html %}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </div>
+</html>

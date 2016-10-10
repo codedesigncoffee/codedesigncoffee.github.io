@@ -1,0 +1,94 @@
+---
+---
+@import "bourbon";
+@import "susy";
+@import "breakpoint";
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700|Alegreya+Sans|Alegreya+Sans+SC);
+
+$susy: ( columns: 12, container: 960px, global-box-sizing: border-box );
+
+@include border-box-sizing;
+
+$font-stack: 'Alegreya', serif;
+$smallcaps-stack: 'Alegreya Sans SC', sans-serif;
+$sans-stack: 'Alegreya Sans', sans-serif;
+$code-stack: 'Input Mono Cond', 'Courier New', monospace;
+
+$wide-topper-height: 190px;
+
+$dark-footer-color: #000000;
+$dark-grey-color: #808080;
+$light-gray-color: #a6a6a6;
+$light-background-color: #f9f9fb;
+$link-color: #000000;
+$text-color: #222222;
+$primary-color: #e14143;
+$sidebar-background-color: #fafafa;
+
+$text-width: max-width 460px;
+$narrow: max-width 770px;
+$wide: min-width 770px;
+
+@import 'layout';
+@import 'article';
+@import 'sidebar';
+
+.content {
+  .reserved {
+    height:$wide-topper-height;
+  }
+  nav.mobile {
+    @include text-narrows-on-mobile;
+    @include text-padding;
+    text-align: center;
+    padding-top: 15px;
+    color: $light-gray-color;
+    font-family: $smallcaps-stack;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 70px;
+    a {
+      color: $light-gray-color;
+    }
+  }
+  .graph {
+    @include text-narrows-on-mobile;
+    @include text-padding;
+  }
+}
+
+@import 'footer';
+@import 'highlight';
+
+.reserved {
+  h1 {
+    @include text-padding;
+    @include text-narrows-on-mobile;
+    font-family: $smallcaps-stack;
+    font-weight: 400;
+    margin: 0;
+    @include breakpoint($narrow) {
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @include breakpoint($wide) {
+      font-size: 40px;
+      padding-top:40px;
+    }
+  }
+}
+
+.app-head {
+  .app-icon {
+      width:150px;
+      height:150px;
+  }
+  .app-title {
+    font-family: $sans-stack;
+    margin: 40px auto 20px auto;
+  }
+  text-align: center;
+}

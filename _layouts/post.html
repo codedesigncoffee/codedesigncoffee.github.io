@@ -1,9 +1,22 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<!--h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
+
+</div-->
+
+<section class="reserved"></section>
+<section class="single">
+
+  <!--%= partial 'single_article', :locals => { :article => current_article }  %-->
   {{ content }}
-</div>
+
+  <!--% if article_is_micropost(current_article) %>
+    <%= partial "micropost_footer" %>
+  <% else %>
+    <%= partial "article_footer" %>
+  <% end %-->
+</section>

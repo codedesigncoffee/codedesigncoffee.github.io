@@ -1,0 +1,33 @@
+<nav>
+  <section class="menu-section">
+    <h4>Now &amp; Projects</h4>
+    <ul>
+      <li><a href="/now">Doing Now &amp; Projects</a></li>
+      <li><a href="/training">Training Log</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </section>
+  <section class="menu-section">
+    <h4>Categories</h4>
+    <ul>
+    {% for tag in site.tags %}
+        <li><a href="/topic/{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+    </ul>
+  </section>
+  <section class="menu-section">
+    <h4>Resources</h4>
+    <ul>
+      <li><a href="/blogroll">Blogs I Read</a></li>
+    </ul>
+  </section>
+  <section class="menu-section">
+    <h4>Follow</h4>
+    <ul>
+      <li><a href="//twitter.com/totocaster">@totocaster</a></li>
+      <li><a href="//instagram.com/totocaster">Instagram</a></li>
+      <li><a href="//www.strava.com/athletes/1127580">Strava</a></li>
+      <li><a href="/rss">RSS</a></li>
+    </ul>
+  </section>
+</nav>
