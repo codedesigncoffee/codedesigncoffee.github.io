@@ -5,6 +5,13 @@ permalink: /:year/:month/:title
 
 encoding: utf-8
 
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed
