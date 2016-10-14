@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Moving to GitHub Pages"
 date: 2016-10-03
 category: Snippet
