@@ -2,7 +2,7 @@
 title: Introducing Energy
 link: http://codedesigncoffee.net/energy
 date: 2016-05-27 14:49 JST
-tags: forged, energy
+tags: [forged, energy]
 ---
 
 Few days ago I published an app which I use internally for quite a while. _Energy_ is a manual calorie counter which helped me lose quite a few kilograms and then maintain my current weight for several years.

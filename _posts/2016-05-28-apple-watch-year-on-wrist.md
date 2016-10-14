@@ -1,7 +1,7 @@
 ---
 title: Apple Watch&#58; Year on Wrist
 date: 2016-05-28 20:32 JST
-categories: apple, watch, tech
+categories: [apple, watch, tech]
 ---
 
 I love wristwatches, [mechanical](https://www.omegawatches.com/watches/speedmaster/moonwatch/product/), [electronic](http://www.gshock.com/watches/Trending/DW5600SL-7), [field](http://www.hamiltonwatch.com/collection/khaki/field/titanium-auto/h70575733), [silly](http://mickeymousecollectibles.com/graphics/watch-classic.jpg), [grand-complications](http://www.patek.com/en/mens-watches/grand-complications), [tourbillons](http://www.cartier.com/collections/watches/mens-watches/rotonde-de-cartier/w1556242-rotonde-de-cartier-watch.html), [dress watches](http://www.patek.com/en/mens-watches/calatrava), [divers](http://www.rolex.com/watches/submariner/m116610ln-0001.html), all of them. They serve as jewelry, and most importantly for me—as an everyday utility tool — of which so many people no longer believe in.

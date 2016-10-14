@@ -1,7 +1,7 @@
 ---
 title: The Apple Watch got me hooked on mechanical watches
 date: 2016-02-05 20:36 UTC
-tags: tech
+tags: [tech]
 link: https://marco.org/2016/02/05/watch
 ---
 
