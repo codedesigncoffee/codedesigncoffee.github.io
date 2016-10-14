@@ -11,8 +11,9 @@
   <section class="menu-section">
     <h4>Categories</h4>
     <ul>
-    {% for category in site.categories %}
-        <li><a href="/topic/{{ category | first | slugaze }}/">{{ category | first }}</a></li>
+    {% assign all_tags = site.tags | sort %}
+    {% for tag in all_tags %}
+        <li><a href="/topic/{{ tag | first | slugaze }}/">{{ tag | first | capitalize }}</a></li>
     {% endfor %}
     </ul>
   </section>

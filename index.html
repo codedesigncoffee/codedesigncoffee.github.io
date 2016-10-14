@@ -1,13 +1,10 @@
 ---
 layout: default
-title: Home Page
+title: Code, Design &amp; Coffee by Toto Tvalavadze
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Toto!</h1>
-	<p>This is Jekyll + GitHub Pages test. W00t.</a></p>
-	<ul class="posts">
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
-</div><!-- /.blurb -->
+<section class="reserved"></section>
+<section class="articles">
+{% for post in site.posts %}
+  {% include post.html post_content = post %}
+{% endfor %}
+</section>
