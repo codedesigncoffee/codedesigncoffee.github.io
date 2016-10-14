@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <strong>Doing Now</strong> &amp; Projects
+title: Doing Now
 changefreq: weekly
 ---
 

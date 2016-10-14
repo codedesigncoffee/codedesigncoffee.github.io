@@ -2,16 +2,17 @@
   <section class="menu-section">
     <h4>Now &amp; Projects</h4>
     <ul>
-      <li><a href="/now">Doing Now &amp; Projects</a></li>
-      <li><a href="/training">Training Log</a></li>
+      <li><a href="/now">Doing Now</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <!-- li><a href="/training">Training Log</a></li --> <!-- TODO: pending Strava API migration. -->
       <li><a href="/about">About</a></li>
     </ul>
   </section>
   <section class="menu-section">
     <h4>Categories</h4>
     <ul>
-    {% for tag in site.tags %}
-        <li><a href="/topic/{{ tag }}">{{ tag }}</a></li>
+    {% for category in site.categories %}
+        <li><a href="/topic/{{ category | first | slugaze }}/">{{ category | first }}</a></li>
     {% endfor %}
     </ul>
   </section>
