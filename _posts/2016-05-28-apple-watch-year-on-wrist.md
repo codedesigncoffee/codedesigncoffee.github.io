@@ -14,7 +14,7 @@ I’ve been wearing Apple Watch every single day since it arrived on May 15, 201
 
 So what is Apple Watch?
 
-> It’s just a digital watch, reimagined for today’s world, …
+> It’s just a digital watch, reimagined for today’s world, […]
 
 Simple as that. In the age of ubiquitous connectivity, Bluetooth everything, internet of things, always-on fitness trackers, WiFi cameras and cars that can almost drive themselves, connected watch that can show you things other than time makes perfect sense.
 
@@ -35,7 +35,7 @@ With that out of the way, here are thing I believe Apple got right that was not 
 
 Having said that, not everything about Apple Watch is that great as you might already notice if you read tech press.
 
-> “…it’s kind of slow.”
+> […] it’s kind of slow.
 
 This is very true. There are parts of the Watch I wish never made to release. Those are most talked about things in the press and that does make an impression that the whole concept of having a modern watch is dumb.
 

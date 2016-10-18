@@ -1,34 +1,7 @@
 <article>
-  <h1><a href="{{ include.post_content.url }}">{{ include.post_content.title }}</a></h1>
   {{ include.post_content.content }}
   <div class="byline">
-    {% if include.post_content.tags contains 'snippet' %}
-      <span class="linked-or-briefly">&rarr;</span>
-    {% endif %}
+    <span class="linked-or-briefly">&rarr;</span>
     <a href="{{ include.post_content.url }}">{{ include.post_content.date | date: "%A, %B %-d, %Y"}}</a>
-
   </div>
-
-  <!--
-    <div class="byline">
-
-      <% if article.tags.include? 'snippet'  %>
-        <%= link_to article_loc_datetime(article), article.url %>
-      <% else %>
-        <%= link_to article_loc_date(article), article.url %>
-      <% end -%>
-
-      <% article.tags.each do |tag|  %>
-        <% if title_for_tag(tag)  %>
-          <% if tag != 'snippet'  %>
-            &sdot; <span class="tag"><%= link_to title_for_tag(tag), "/topic/#{tag}" %></span>
-          <% end -%>
-        <% end -%>
-      <% end -%>
-
-      <% if show_reading_assistant? article.body %>
-        &sdot; <span><%= reading_time article.body %> minute read</span>
-      <% end %>
-    </div>
-    -->
 </article>
