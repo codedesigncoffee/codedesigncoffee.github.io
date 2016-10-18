@@ -1,5 +1,5 @@
 ---
-title: WWDC Wish List
+title: Steve Stroughton-Smith's WWDC Wish List
 date: 2016-02-29 08:54
 link: http://blog.steventroughtonsmith.com/post/140141855080/wwdc-wish-list
 tags: [tech, ios]
