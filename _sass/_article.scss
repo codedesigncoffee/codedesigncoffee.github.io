@@ -30,7 +30,7 @@ article {
     margin-top: 0;
     margin-bottom: 5px;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     color: $link-color;
     a {
       color: $link-color;
@@ -45,7 +45,7 @@ article {
     @include text-padding;
     @include text-centers-on-mobile;
     font-family: $sans-stack;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     margin-top:30px;
   }
@@ -69,7 +69,7 @@ article {
     @include text-padding;
     @include text-narrows-on-mobile;
     font-family: $sans-stack;
-    font-size: 14px;
+    font-size: 11px;
     color: $light-gray-color;
     margin-top:-5px;
     a { color: $light-gray-color; }
@@ -81,8 +81,8 @@ article {
   }
 
   blockquote {
-    margin-left: 20px;
-    border-left: 1px solid $light-gray-color;
+    margin-left: 10px;
+    border-left: 1px solid #EEEEEE;
     @include breakpoint($narrow) {
       @include text-narrows-on-mobile;
       max-width: 420px;
@@ -97,8 +97,8 @@ article {
     @include text-narrows-on-mobile;
     //@include hyphens(auto);
     //text-align: justify;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 20px;
     color: $text-color;
     margin-bottom: 10px;
     i {
@@ -115,8 +115,8 @@ article {
     }
     padding-left:30px;
     li {
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 12px;
+      line-height: 20px;
       color: $text-color;
     }
   }
@@ -149,7 +149,7 @@ article {
 
   code {
     font-family: $code-stack;
-    font-size:14px;
+    font-size:12px;
   }
   pre {
     @include text-padding;
@@ -163,7 +163,7 @@ article {
       hyphens: none;
       padding: 0;
       font-size: 12px;
-      line-height: 15px;
+      line-height: 20px;
       display: block;
       margin-right: auto;
       margin-left: auto;
@@ -182,8 +182,8 @@ article {
     padding: 0 10px;
     margin-top: 5px;
     color:$dark-grey-color;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 20px;
   }
   img, canvas {
     width:100%;
@@ -215,8 +215,8 @@ aside {
   p {
     @include text-padding;
     @include text-narrows-on-mobile;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 20px;
     color: $dark-grey-color;
     a {
       color: $dark-grey-color;
@@ -274,7 +274,7 @@ article {
     .time {
       font-family: $smallcaps-stack;
       text-transform: lowercase;
-      font-size: 14px;
+      font-size: 12px;
       color: $light-gray-color;
       a {
         color: $light-gray-color;
