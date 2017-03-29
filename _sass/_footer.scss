@@ -12,6 +12,7 @@
     p {
       @include text-narrows-on-mobile;
       @include text-padding;
+      font-size: 14px;
     }
     p:first-child {
       margin-top:0;
@@ -27,7 +28,7 @@
       }
       p {
         font-family: $sans-stack;
-        font-size: 12px;
+        font-size: 10px;
         text-transform: uppercase;
         margin: 0;
         span { text-transform: lowercase; }

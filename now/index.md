@@ -4,7 +4,7 @@ title: Doing Now
 changefreq: weekly
 ---
 
-As of late October 2016, I am in living Japan with my wife. While she is doing her Masters degree I'm focused on things below:
+As of late March 2017, I am in living Japan with my wife. While she is doing her Masters degree I'm focused on things below:
 
 - iOS consulting work,
 - Programming [Forged App][ff],
