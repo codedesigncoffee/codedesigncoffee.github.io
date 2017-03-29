@@ -29,8 +29,8 @@ article {
     @include text-centers-on-mobile;
     margin-top: 0;
     margin-bottom: 5px;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
     color: $link-color;
     a {
       color: $link-color;
@@ -46,20 +46,20 @@ article {
     @include text-centers-on-mobile;
     font-family: $sans-stack;
     font-size: 16px;
-    text-transform: uppercase;
-    margin-top:30px;
+    font-weight: 600;
+    margin-top: 30px;
   }
 
   h3 {
-    font-weight: 400;
+    font-size: 14px;
   }
 
   &.linked {
     h1 {
       a {
         font-weight: normal;
-        font-size: 16px;
-        color:$primary-color;
+        font-size: 18px;
+        color: $primary-color;
         text-decoration: underline;
       }
     }
@@ -69,9 +69,8 @@ article {
     @include text-padding;
     @include text-narrows-on-mobile;
     font-family: $sans-stack;
-    font-size: 11px;
+    font-size: 10px;
     color: $light-gray-color;
-    margin-top:-5px;
     a { color: $light-gray-color; }
     .linked-or-briefly { color:$primary-color; }
     .tag a {
@@ -95,10 +94,8 @@ article {
   p {
     @include text-padding;
     @include text-narrows-on-mobile;
-    //@include hyphens(auto);
-    //text-align: justify;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 1.5;
     color: $text-color;
     margin-bottom: 10px;
     i {
@@ -115,8 +112,8 @@ article {
     }
     padding-left:30px;
     li {
-      font-size: 12px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 1.5;
       color: $text-color;
     }
   }

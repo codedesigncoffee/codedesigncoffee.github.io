@@ -10,9 +10,9 @@ $susy: ( columns: 12, container: 800px, global-box-sizing: border-box );
 
 @include border-box-sizing;
 
-$font-stack: Verdana, Geneva, sans-serif;
-$smallcaps-stack: Verdana, Geneva, sans-serif;
-$sans-stack: Verdana, Geneva, sans-serif;
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$smallcaps-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$sans-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 $code-stack: 'Input Mono Cond', 'Courier New', monospace;
 
 $wide-topper-height: 190px;
@@ -68,7 +68,7 @@ $wide: min-width 770px;
     @include text-padding;
     @include text-narrows-on-mobile;
     font-family: $smallcaps-stack;
-    font-weight: 400;
+    font-weight: 900;
     margin: 0;
     @include breakpoint($narrow) {
       font-size: 20px;
@@ -76,8 +76,8 @@ $wide: min-width 770px;
       padding-bottom: 20px;
     }
     @include breakpoint($wide) {
-      font-size: 40px;
-      padding-top:40px;
+      font-size: 36px;
+      padding-top: 36px;
     }
   }
 }
