@@ -1,0 +1,22 @@
+---
+# Microblog styles and layout.
+---
+
+body {
+  margin: 0;
+}
+
+body, html {
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+section.microblog { 
+  font-family: Avenir;
+  font-size: 14px;
+  width: 640px;
+
+  img {
+    width: 640px;
+  }
+}

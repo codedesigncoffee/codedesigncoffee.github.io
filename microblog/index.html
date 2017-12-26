@@ -1,8 +1,8 @@
 ---
+layout: microblog
 title: Microblog
 ---
-<section class="reserved"></section>
-<section class="articles">
+<section class="microblog">
 {% for post in site.posts %}
   {% if post.tags contains 'snippet' %}
       {% include snippet.html post_content = post %}
