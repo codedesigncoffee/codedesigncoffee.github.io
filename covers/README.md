@@ -1,0 +1,1 @@
+This folder contains all covers used on the website. See `_data/covers.yml` for usage.
