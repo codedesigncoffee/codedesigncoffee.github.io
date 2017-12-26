@@ -1,18 +1,32 @@
 ---
-layout: default
 title: Code, Design &amp; Coffee by Toto Tvalavadze
 ---
-<section class="reserved"></section>
-<section class="articles">
-{% for post in site.posts %}
-  {% if post.link %}
-    {% include linked.html post_content = post %}
-  {% else %}
-    {% if post.tags contains 'snippet' %}
-      {% include snippet.html post_content = post %}
-    {% else %}
-      {% include post.html post_content = post %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</section>
+<html>
+  <head>
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/welcome.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <div>
+          <img class="logo" src="/assets/images/stamp-logo.png" alt="Code, Design &amp; Coffee Stamp Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Programming</a></li>
+            <li><a href="#">Microblog</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </section>
+      <img class="cover-image" src="/covers/apr-2017-shinkansen.jpg" alt="Lorem ipsum dolor sit.">
+      <div class="description">
+        <p>Photo: Lorem <a href="#">ipsum dolor</a> sit doloe amatte.</p>
+      </div>
+    </div>
+  </body>
+</html>
