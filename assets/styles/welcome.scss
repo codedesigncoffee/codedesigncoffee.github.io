@@ -6,6 +6,12 @@ body {
   margin: 0;
 }
 
+body, html {
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .wrapper {
   section {
     position: fixed;
@@ -13,7 +19,7 @@ body {
     left: 48px;
     left: calc(48px + env(safe-area-inset-left)); /* For iPhone X */
     
-    width: 137px;
+    width: 135px;
     background-color: rgba(255, 255, 255, 0.85);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
