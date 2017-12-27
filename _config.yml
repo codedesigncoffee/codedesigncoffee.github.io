@@ -1,8 +1,7 @@
 name: Code, Design & Coffee
 markdown: kramdown
-
+timezone: Asia/Tokyo
 permalink: /:year/:month/:title
-
 encoding: utf-8
 
 defaults:

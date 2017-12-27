@@ -1,18 +1,32 @@
 ---
-layout: default
 title: Code, Design &amp; Coffee by Toto Tvalavadze
 ---
-<section class="reserved"></section>
-<section class="articles">
-{% for post in site.posts %}
-  {% if post.link %}
-    {% include linked.html post_content = post %}
-  {% else %}
-    {% if post.tags contains 'snippet' %}
-      {% include snippet.html post_content = post %}
-    {% else %}
-      {% include post.html post_content = post %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</section>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/welcome.css">
+    {% include common_meta.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <div>
+          <img class="logo" src="/assets/images/stamp-logo.png" alt="Code, Design &amp; Coffee Stamp Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Programming</a></li>
+            <li><a href="/microblog/">Microblog</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </section>
+      <img class="cover-image" src="/covers/{{ site.data.covers.first.image_url }}" alt="{{ site.data.covers.first.title }}">
+      <div class="description">
+        <p>Photo: {{ site.data.covers.first.title }}</p>
+      </div>
+    </div>
+  </body>
+</html>

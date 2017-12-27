@@ -1,0 +1,70 @@
+---
+# Microblog styles and layout.
+---
+
+@import url("https://use.typekit.net/ovx8qqf.css");
+
+@mixin regular-text() {
+  font-family: minion-pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+}
+
+@mixin byline-text() {
+  font-family: "futura-pt";
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@mixin headline-text($size) {
+  font-family: "futura-pt";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  font-size: $size;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+}
+
+.wrappper {
+  margin: 20px auto 20px auto;
+  width: 540px;
+}
+
+section.microblog { 
+  article {
+    h1 {
+      @include headline-text(18px);
+      color: black;
+    }
+
+    @include regular-text();
+    margin-bottom: 100px;
+    color: #333;
+
+    a {
+      color: black;
+    }
+
+    .byline {
+      @include byline-text();
+      color: rgb(148, 144, 132);
+      a { 
+        color: rgb(148, 144, 132);
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
