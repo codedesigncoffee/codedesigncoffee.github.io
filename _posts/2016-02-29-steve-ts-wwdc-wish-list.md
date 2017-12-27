@@ -1,6 +1,6 @@
 ---
 date: 2016-02-29 08:54
-tags: [snippet]
+category: snippet
 ---
 
 Interesting list with lots of great points by [Steve T-S][sts]. Nothing seems unrealistic, even this one:

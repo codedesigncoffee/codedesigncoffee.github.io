@@ -1,6 +1,6 @@
 ---
 date: 2016-03-18 10:18
-tags: [snippet, ios]
+category: snippet
 ---
 
 I hope this will not bite me hard, but today marks day I'm rewriting core part of Forged in Swift. Strategy is simple:

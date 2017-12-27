@@ -1,6 +1,6 @@
 ---
 date: 2016-02-18 13:36
-tags: [snippet, personal]
+category: snippet
 ---
 
 ![Kanazawa Seaside in Winter](http://codeffee-files.s3.amazonaws.com/2016-02-20-kanazawa-winter-seaside.jpg)

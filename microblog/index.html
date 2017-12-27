@@ -4,7 +4,7 @@ title: Microblog
 ---
 <section class="microblog">
 {% for post in site.posts %}
-  {% if post.tags contains 'snippet' %}
+  {% if post.category == 'snippet' %}
       {% include snippet.html post_content = post %}
     {% endif %}
 {% endfor %}

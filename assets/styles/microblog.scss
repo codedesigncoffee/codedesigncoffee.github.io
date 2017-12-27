@@ -43,8 +43,11 @@ body {
 section.microblog { 
   article {
     h1 {
-      @include headline-text(18px);
+      @include headline-text(16px);
       color: black;
+      a { 
+        text-decoration: none;
+      }
     }
 
     @include regular-text();
