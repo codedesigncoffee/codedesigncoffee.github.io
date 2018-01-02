@@ -6,7 +6,7 @@ noindex: true
 
 ## Acknowledgments
 
-This site is built using [Jekyll][jk] and is hosted on [GutHub Pages][gp]. Posts are written using [Markdown][md]. Fonts are provided by Google Fonts and Webtype.
+This site is built using [Jekyll][jk] and is hosted on [GutHub Pages][gp]. Posts are written using [Markdown][md]. Fonts are provided by Typekit.
 
 This website is [open-source][os]. This means you are welcome to:
 
@@ -26,7 +26,6 @@ The website is designed by me from scratch, but draws quite a few ideas from [Da
 Nothing out of ordinary here, but below are things you might want to know.
 
 - This site uses [Google Analytics][ga] to analyze visits.
-- Fonts are provided by [Google Fonts][gf], and [Webtype][wt].
 - Amazon links are affiliate links (sometimes).
 
 If above concerns you, feel free to disable cookies in your web-browser or use a content blocker to opt-out from Google Analytics and disable web fonts.
@@ -46,5 +45,3 @@ _Latest update: Oct 14, 2016 at 10:46 am._
 [md]:http://daringfireball.net/projects/markdown/
 
 [ga]:http://www.google.com/analytics/
-[wt]:http://www.webtype.com/info/privacy-policy/
-[gf]:https://developers.google.com/fonts/faq
