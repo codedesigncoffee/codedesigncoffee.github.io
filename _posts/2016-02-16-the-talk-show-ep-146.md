@@ -9,4 +9,4 @@ link: http://daringfireball.net/thetalkshow/2016/02/12/ep-146
 
 Many will say that John was too soft (he was not) and both Eddy and Craig were vague on software quality issues (they were, a bit).
 
-None of this matters. Great episode. Message was delivered.
+None of this matters. Great episode. Message has been delivered.

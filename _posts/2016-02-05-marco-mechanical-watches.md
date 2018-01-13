@@ -1,12 +1,11 @@
 ---
 title: The Apple Watch got me hooked on mechanical watches
 date: 2016-02-05 20:36 UTC
-category: code
-tags: 
-  - tech
+category: snippet
+tags: [misc]
 ---
 
-Marco Arment:
+[Marco Arment](https://marco.org/2016/02/05/watch):
 
 > [...] I simply like mechanical watches more. I've completely converted, and I don't foresee myself wearing the Apple Watch much in the future --- the additional functionality it offers isn't useful enough to me (your needs may vary) to overcome the far greater joy I get out of wearing a nice mechanical watch.
 
