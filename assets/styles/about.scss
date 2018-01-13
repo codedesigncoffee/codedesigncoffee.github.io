@@ -2,3 +2,89 @@
 # Styles for About Page
 ---
 
+@import url("https://use.typekit.net/ivr6toq.css");
+
+@mixin regular-text() {
+  font-family: "din-2014", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+body, html {
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wrapper {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.about {
+  width:400px;
+  display:block;
+  float:left;
+}
+
+section.now {
+  width:400px;
+  display:block;
+  float:left;
+  margin-left:20px;
+}
+
+section {
+  abbr {
+    font-variant: small-caps;
+    font-feature-settings: "c2sc";
+    cursor: help;
+  }
+
+  color: #EEE;
+  
+  a {
+    color: white;
+  }
+
+  p, blockquote, li {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures contextual;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+    @include regular-text();
+    text-rendering: optimizeLegibility;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  p abbr,
+  p span {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures contextual;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-variant-caps: all-small-caps;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+  }
+
+  blockquote {
+    padding: 0 20px;
+    margin: 20px 0;
+    border-left: 4px solid rgb(44, 44, 44);
+  }
+}
